@@ -29,10 +29,10 @@
     }
     {
     {{#if startDate}}
-        {{startDate}}
+        {{dateFormat startDate format="MMM YYYY"}}
     {{/if}}
     {{#if endDate}}
-        - {{endDate}}
+        - {{dateFormat endDate format="MMM YYYY"}}
     {{else}}
         - Present
     {{/if}}

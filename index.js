@@ -1,6 +1,22 @@
 var fs = require("fs");
 var path = require('path');
 var Handlebars = require("handlebars");
+var moment = require("moment");
+
+Handlebars.registerHelper('dateFormat', function (date, options) {
+    const formatToUse = (arguments[1] && arguments[1].hash && arguments[1].hash.format) || "DD/MM/YYYY"
+    return moment(date).format(formatToUse);
+});
+
+Handlebars.registerHelper('replaceall', function(find, replace, options) {
+  var re = new RegExp(escapeRegExp(find), 'g');
+  var string = options.fn(this);
+  return string.replace(re, replace);
+});
+
+function escapeRegExp(string) {
+  return string.replace(/[.*+\-?^${}()|[\]\\]/g, '\\$&'); // $& means the whole matched string
+}
 
 function render(resume) {
 	var css = fs.readFileSync(__dirname + "/style.css", "utf-8");
@@ -19,6 +35,8 @@ function render(resume) {
 
 	  Handlebars.registerPartial(name, template);
 	});
+
+    console.log("register helper");
 	return Handlebars.compile(tpl)({
 		css: css,
 		resume: resume

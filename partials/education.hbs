@@ -5,7 +5,7 @@
 	{{#each resume.education}}
     \schoolsectionend
     {
-    \textbf{ {{institution}} }
+      {{institution}}
     }
     {
     {{city}}
@@ -15,25 +15,21 @@
     }
     {
     {{#if startDate}}
-        {{startDate}}
+        {{dateFormat startDate format="MMM YYYY"}}
     {{/if}}
     {{#if endDate}}
-        - {{endDate}}
+        - {{dateFormat endDate format="MMM YYYY"}}
     {{else}}
         - Present
     {{/if}}
     }
     {
         {{#if courses.length}}
+        \textbf{Relevant Courses:}
+        {{#each courses}}
+            {{#if @index}}, {{/if}} {{.}}
+        {{/each}}
         {{/if}}
-        \iffalse
-        \begin{flushleft}
-            \textbf{Relevant Courses:}
-            {{#each courses}}
-                {{#if @index}}, {{/if}} {{.}}
-            {{/each}}
-        \end{flushleft}
-        \fi
     }
     {{/each}}
 \end{flushleft}
