@@ -1,6 +1,6 @@
 # jsonresume-theme-latex-jas
 
-This is a latex theme built off the boilerplate theme for [JSON Resume](http://jsonresume.org/).
+This is a latex theme built off the boilerplate theme for [JSON Resume](http://jsonresume.org/)
 
 ## Getting started
 
