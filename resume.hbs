@@ -1,29 +1,143 @@
-<!doctype html>
+<!Doctype html>
 <html>
-	<head>
-	
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
-	
-	<title>{{#resume.basics}}{{name}}{{/resume.basics}}</title>
 
-	<style>
-	{{{css}}}
-	</style>
-	
-	</head>
-	<body>
-	
-	<div id="resume">
-		{{> basics }}
-		{{> work }}
-		{{> volunteer }}
-		{{> education }}
-		{{> awards }}
-		{{> publications }}
-		{{> skills }}
-		{{> languages }}
-		{{> interests }}
-		{{> references }}
-	</body>
+<style>
+.show-white-space {
+    white-space: pre-wrap;
+}
+</style>
+
+<body class="show-white-space">
+
+% resume.tex
+% vim:set ft=tex spell:
+
+\documentclass[11pt,letterpaper]{article}
+\usepackage[letterpaper,margin=0.54in, top=0.5in, bottom=0.5in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{wrapfig}
+\usepackage{mdwlist}
+\usepackage{enumitem}
+\usepackage{fontawesome5}
+\usepackage{marvosym}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{hyphenat}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{tgpagella}
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+\definecolor{greyish}{RGB}{168,168,168}
+\definecolor{blackish}{RGB}{70,70,70}
+
+
+\def\labelitemi{\textbf{$\rightarrow$}}
+\renewcommand*\rmdefault{lmss}
+
+
+% indentsection style, used for sections that aren't already in lists
+% that need indentation to the level of all text in the document
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% opposite of above; bump a section back toward the left margin
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{-0.5#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% ------------------------------
+% subsection template
+% ------------------------------
+\newcommand{\subsectioncustomend}[1]
+{
+\vspace{-0.8em}
+\subsection*{#1}
+}
+
+\newcommand{\subsectioncustom}[1]
+{
+\hrule
+\subsectioncustomend{#1}
+}
+
+
+% ------------------------------
+% work section template end
+% ------------------------------
+\newcommand{\worksectionend}[5]
+{
+\begin{tabularx}{\textwidth}{Xr}
+\textbf{#1}
+&
+\textbf{#2}
+&
+\emph{#3}
+&
+\emph{#4}
+\end{tabularx}
+\vspace{-1.2em}
+{#5}
+}
+
+% ------------------------------
+% work section template between
+% ------------------------------
+\newcommand{\worksection}[5]
+{
+\worksectionend{#1}{#2}{#3}{#4}{#5}
+%\vspace{-0.5em}
+\vspace{-1.5em}
+\textcolor{greyish}{\hrule width 0.98\textwidth height 0.1pt}
+\vspace{.2em}
+}
+
+% ------------------------------
+% school section template end
+% ------------------------------
+\newcommand{\schoolsectionend}[5]{
+\worksectionend{#1}{#2}{#3}{#4}{#5}
+}
+
+
+% make "C++" look pretty when used in text by touching up the plus signs
+\newcommand{\CPP}
+{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
+
+% ------------------------------
+% End Templates
+% ------------------------------
+
+
+% ------------------------------
+% Begin Document
+% ------------------------------
+
+\begin{document}
+
+\fontdimen2\font=3.0pt
+
+
+{{> basics }}
+{{> skills }}
+{{> work }}
+{{> projects }}
+{{> education }}
+
+\end{document}
+
+% ------------------------------
+% End Document
+% ------------------------------
+
+</body>
 </html>

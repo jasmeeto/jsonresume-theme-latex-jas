@@ -1,0 +1,20 @@
+{{#if resume.projects.length}}
+\subsectioncustom{Personal Projects}
+\vspace{-0.5em}
+\begin{flushleft}
+    {
+        {{#if resume.projectUrl}}
+        \textcolor{greyish}{ \href{ {{resume.projectUrl}} }{ {{resume.projectUrl }} }}
+        {{/if}}
+    }
+    {{#each resume.projects}}
+        \\
+        {
+        \href{ {{url}} }{\textbf{ {{name}} }}:{{description}}
+        }
+    {{/each}}
+\end{flushleft}
+
+{{/if}}
+
+

@@ -1,4 +1,63 @@
 {{#if resume.work.length}}
+
+
+\subsectioncustom{Experience}
+
+\begin{flushleft}
+
+{{#each resume.work}}
+{
+{{#if @last}}
+\worksectionend
+{{else}}
+\worksection
+{{/if}}
+    {
+    {{#if company}}
+        {{company}}
+    {{/if}}
+    }
+    {
+    {{#if city}}
+        {{city}}
+    {{/if}}
+    }
+    {
+    {{#if position}}
+        {{position}}
+    {{/if}}
+    }
+    {
+    {{#if startDate}}
+        {{startDate}}
+    {{/if}}
+    {{#if endDate}}
+        - {{endDate}}
+    {{else}}
+        - Present
+    {{/if}}
+    }
+    {
+        \begin{itemize*}
+        {
+		    {{#if summary}}
+                \item { {{summary}} }
+		    {{/if}}
+		    {{#if highlights.length}}
+                {{#each highlights}}
+                \item { {{.}} }
+                {{/each}}
+		    {{/if}}
+        }
+        \end{itemize*}
+    }
+}
+{{/each}}
+
+\end{flushleft}
+{{/if}}
+
+<!--
 <section id="work">
 	<h2>Work</h2>
 	{{#each resume.work}}
@@ -48,5 +107,4 @@
 		{{/if}}
 	</div>
 	{{/each}}
-</section>
-{{/if}}
+-->

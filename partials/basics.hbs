@@ -1,4 +1,37 @@
 {{#resume.basics}}
+\title{Resume |  {{name}} }
+
+{{#if email}}
+
+\author{Jasmeet Oberai - {{email}} }
+
+{{/if}}
+
+\begin{center}
+{\color{blackish}{\Huge {\textbf{ {{name}} }}}}
+
+%{\color{blackish}{\Huge {\textbf{Jasmeet Oberai}}} \hspace{6em} \Large {\textbf {4A Software Engineering}}}
+
+\end{center}
+
+
+\begin{center}
+\Mundus
+\hspace{0.1em}
+\href{http://www.jasinobe.com}{jasinobe.com} 
+\faGithub*
+\href{https://github.com/jasmeeto}{github.com/jasmeeto} 
+\Letter
+\hspace{0.1em}
+\href{mailto:jasoberai@gmail.com}{jasoberai@gmail.com}
+\Mobilefone
+\hspace{0.1em}
+{{#if phone}}
+206-453-9615 
+{{/if}}
+\end{center}
+
+<!--
 	<h1>{{name}}</h1>
 	<h2>{{label}}</h2>
 	<section id="basics">
@@ -87,4 +120,5 @@
 		</section>
 		{{/if}}
 	</section>
+-->
 {{/resume.basics}}
