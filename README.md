@@ -1,6 +1,6 @@
-# Boilerplate theme [![](https://badge.fury.io/js/jsonresume-theme-boilerplate.svg)](https://www.npmjs.org/package/jsonresume-theme-boilerplate)
+# jsonresume-theme-latex-jas
 
-This is the boilerplate theme for [JSON Resume](http://jsonresume.org/).
+This is a latex theme built off the boilerplate theme for [JSON Resume](http://jsonresume.org/).
 
 ## Getting started
 
