@@ -36,8 +36,7 @@ function render(resume) {
 	  Handlebars.registerPartial(name, template);
 	});
 
-    console.log("register helper");
-	return Handlebars.compile(tpl)({
+	Handlebars.compile(tpl)({
 		css: css,
 		resume: resume
 	});
