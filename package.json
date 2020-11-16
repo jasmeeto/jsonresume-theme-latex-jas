@@ -1,11 +1,11 @@
 {
-  "name": "jsonresume-theme-boilerplate",
-  "version": "0.1.2",
-  "description": "Boilerplate theme for JSON Resume",
-  "author": "Mattias Erming",
+  "name": "jsonresume-theme-latex-jas",
+  "version": "1.0",
+  "description": "LaTeX theme for json-resume",
+  "author": "Jasmeet Oberai",
   "repository": {
     "type": "git",
-    "url": "https://github.com/erming/jsonresume-theme-boilerplate"
+    "url": "https://github.com/jasmeeto/jsonresume-theme-latex-jas"
   },
   "license": "MIT",
   "dependencies": {
