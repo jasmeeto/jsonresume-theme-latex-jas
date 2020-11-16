@@ -3,8 +3,8 @@
 \vspace{-0.5em}
 \begin{flushleft}
     {
-        {{#if resume.projectUrl}}
-        \textcolor{greyish}{ \href{ {{resume.projectUrl}} }{ {{resume.projectUrl }} }}
+        {{#if resume.basics.projectUrl}}
+        \textcolor{greyish}{ \href{ {{resume.basics.projectUrl}} }{ {{resume.basics.projectUrl }} }}
         {{/if}}
     }
     {{#each resume.projects}}

@@ -5,7 +5,8 @@
     "picture": "",
     "email": "jasoberai@gmail.com",
     "phone": "206-453-9615",
-    "website": "http://www.jasinobe.com/",
+    "website": "http://jasinobe.com",
+    "projectUrl" : "http://www.jasinobe.com/projects",
     "summary": "Software Engineer graduated from the University of Waterloo looking for experience in the vast field of Computer Software. •  Agile and iterative, I love to test and I love to script • I also have strong teamwork skills along with excellent analytical, organizational and communication skills",
     "location": {
       "postalCode": "",
@@ -17,7 +18,7 @@
       {
         "network": "LinkedIn",
         "username": "jasoberai",
-        "url": "https://www.linkedin.com/in/jasoberai/"
+        "url": "https://www.linkedin.com/in/jasoberai"
       },
       {
         "url": "https://github.com/jasmeeto",
@@ -92,7 +93,6 @@
       "website": "https://www.linkedin.com/company/773628"
     }
   ],
-  "projectUrl" : "http://www.jasinobe.com/projects/",
   "projects": [
     {
       "name": "ItinPlanner",

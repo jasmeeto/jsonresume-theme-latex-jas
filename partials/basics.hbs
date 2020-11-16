@@ -18,12 +18,30 @@
 \begin{center}
 \Mundus
 \hspace{0.1em}
-\href{http://www.jasinobe.com}{jasinobe.com} 
-\faGithub*
-\href{https://github.com/jasmeeto}{github.com/jasmeeto} 
+\href{ {{website}} }{
+    {{#replaceall "https://" ""}}
+    {{#replaceall "http://" ""}}
+        {{website}}
+    {{/replaceall}}
+    {{/replaceall}}
+} 
+{{#if profiles}}
+{{#each profiles}}
+    {{#if_equal network "github"}}
+        \faGithub*
+        \href{ {{url}} }{
+			{{#replaceall "https://" ""}}
+			{{#replaceall "http://" ""}}
+				{{url}}
+			{{/replaceall}}
+			{{/replaceall}}
+		} 
+    {{/if_equal}}
+{{/each}}
+{{/if}}
 \Letter
 \hspace{0.1em}
-\href{mailto:jasoberai@gmail.com}{jasoberai@gmail.com}
+\href{mailto:{{email}} }{ {{email}} }
 \Mobilefone
 \hspace{0.1em}
 {{#if phone}}

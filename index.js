@@ -3,6 +3,14 @@ var path = require('path');
 var Handlebars = require("handlebars");
 var moment = require("moment");
 
+Handlebars.registerHelper('if_equal', function(a, b, opts) {
+    if (a == b) {
+        return opts.fn(this)
+    } else {
+        return opts.inverse(this)
+    }
+});
+
 Handlebars.registerHelper('dateFormat', function (date, options) {
     const formatToUse = (arguments[1] && arguments[1].hash && arguments[1].hash.format) || "DD/MM/YYYY"
     return moment(date).format(formatToUse);
