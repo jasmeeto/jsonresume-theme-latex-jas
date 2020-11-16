@@ -36,7 +36,7 @@ function render(resume) {
 	  Handlebars.registerPartial(name, template);
 	});
 
-	Handlebars.compile(tpl)({
+	return Handlebars.compile(tpl)({
 		css: css,
 		resume: resume
 	});

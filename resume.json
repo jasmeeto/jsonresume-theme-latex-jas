@@ -1,0 +1,245 @@
+{
+  "basics": {
+    "name": "Jasmeet Oberai",
+    "label": "Software Engineer",
+    "picture": "",
+    "email": "jasoberai@gmail.com",
+    "phone": "206-453-9615",
+    "website": "http://www.jasinobe.com/",
+    "summary": "Software Engineer graduated from the University of Waterloo looking for experience in the vast field of Computer Software. •  Agile and iterative, I love to test and I love to script • I also have strong teamwork skills along with excellent analytical, organizational and communication skills",
+    "location": {
+      "postalCode": "",
+      "city": "New York",
+      "countryCode": "US",
+      "region": ""
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "jasoberai",
+        "url": "https://www.linkedin.com/in/jasoberai/"
+      },
+      {
+        "url": "https://github.com/jasmeeto",
+        "username": "jasmeeto",
+        "network": "github"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Bloomberg LP",
+      "city": "New York, NY",
+      "highlights": [
+        "Implemented many core analytics engine features, optimizations and improvements",
+        "Added batch processing interface and backtesting support for Jupyter frontend using ComDB2 and RabbitMQ",
+        "Assisted in setting up horizotal scalability service for distributed processing of queries using Java and Spark",
+        "Expanded CI/CD infrastructure using Python, jMeter and Jenkins",
+        "School captain for hiring at University of Waterloo",
+        "Tools/Frameworks Used: Java, Spark, Spring, Python, C++, RabbitMQ, ComDB2, Bash"
+      ],
+      "position": "Software Developer - Bloomberg Query Language Team",
+      "startDate": "2016-09-30",
+      "summary": "Building and enhancing a state of the art data analytics platform currently serving approx 40000 daily users",
+      "website": "https://www.linkedin.com/company/2494"
+    },
+    {
+      "company": "Snap Inc.",
+      "city": "Venice, CA",
+      "startDate": "2015-09-01",
+      "endDate": "2015-12-31",
+      "highlights": [
+        "Tools/Frameworks Used: Git, Xcode, Asana, GDB"
+      ],
+      "summary": "Worked with and programmed both firmware and iOS integration for new, cutting edge Snap Spectales",
+      "position": "Software Development Intern - Snaplabs Team - iOS",
+      "website": "https://www.linkedin.com/company/15191764"
+    },
+    {
+      "company": "Bloomberg LP",
+      "city": "New York, NY",
+      "startDate": "2015-01-01",
+      "endDate": "2015-04-30",
+      "highlights": [
+        "Tools/Frameworks Used: Hadoop, Spark, Vectorwise, Spring, ANTLR, MySQL, R"
+      ],
+      "position": "SDE Intern - Bloomberg Query Language Team",
+      "summary": "Worked on adding and optimizing functionality for BQL engine core, mainly in Java",
+      "website": "https://www.linkedin.com/company/2494"
+    },
+    {
+      "company": "Amazon",
+      "city": "Seattle, WA",
+      "startDate": "2014-05-01",
+      "endDate": "2014-08-31",
+      "highlights": [
+        "Tools/Frameworks Used: Git, Eclipse, Android SDK, EasyMock, PowerMock"
+      ],
+      "position": "SDE Intern - Instant Video - Android",
+      "summary": "Added cross team HTTP service integration for the application and worked on visual design for storefront",
+      "website": "https://www.linkedin.com/company/1586"
+    },
+    {
+      "company": "Flipp",
+      "city": "Toronto, ON",
+      "startDate": "2013-01-01",
+      "endDate": "2013-04-30",
+      "highlights": [
+        "Tools/Frameworks Used: RoR, HTML5, CSS3, MySQL, FogBugz, Git"
+      ],
+      "position": "Software Development Intern - Backend - RoR",
+      "summary":  "Worked on web application implemented in Ruby on Rails running on Amazon Web Services (including S3)",
+      "website": "https://www.linkedin.com/company/773628"
+    }
+  ],
+  "projectUrl" : "http://www.jasinobe.com/projects/",
+  "projects": [
+    {
+      "name": "ItinPlanner",
+      "url" : "https://play.google.com/store/apps/details?id=com.jbap.itinplanner",
+      "description": "Travel planning Android app created during fourth year as a design project"
+    },
+    {
+      "name": "SketchServer",
+      "url" : "http://git.io/tuKCsQ",
+      "description": "A real-time multi user sketch pad made using Node.js, Backbone.js, Omni.js,HTML5, and CSS3"
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Seva Food Bank",
+      "position": "Volunteer Warehouse Supply Associate",
+      "website": "https://www.linkedin.com/company/2340090",
+      "startDate": "2010-09-30",
+      "endDate": "2011-02-28",
+      "summary": ""
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Waterloo",
+      "city": "Waterloo ON",
+      "area": "Software Engineering",
+      "studyType": "Bachelor of Software Engineering",
+      "startDate": "2011-09-06",
+      "endDate": "2016-12-31",
+      "gpa": "",
+      "courses": [
+        "Security",
+        "Operating Systems",
+        "Concurrency",
+        "Artificial Intelligence"
+      ]
+    }
+  ],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Mobile/Web",
+      "level": "Proficient",
+      "keywords": [
+        "iOS",
+        "Android",
+        "JavaScript",
+        "CSS3",
+        "HTML5",
+        "Node.js"
+      ]
+    },
+    {
+      "name": "Backend",
+      "level": "Proficient",
+      "keywords": [
+        "Java",
+        "C/C++",
+        "C#",
+        "Ruby",
+        "Python",
+        "Bash"
+      ]
+    },
+    {
+      "name": "Frameworks/Tools",
+      "level": "Proficient",
+      "keywords": [
+        "Spring",
+        "Spark",
+        "Kafka",
+        "ReactJS",
+        "RoR",
+        "OpenGL",
+        "django",
+        "jQuery",
+        "Git"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native Language"
+    },
+    {
+      "language": "Punjabi",
+      "fluency": "Native Language"
+    },
+    {
+      "language": "Hindi",
+      "fluency": "Fluent Oral/Beginner Reading"
+    },
+    {
+      "language": "Urdu",
+      "fluency": "Fluent Oral/Beginner Reading"
+    },
+    {
+      "language": "French",
+      "fluency": "Beginner"
+    },
+    {
+      "language": "Spanish",
+      "fluency": "Beginner"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Music",
+      "keywords" : [
+          "Indian classical music",
+          "Tabla",
+          "Vocal",
+          "Hip-hop"
+      ]
+    },
+    {
+      "name": "Philosophy and Language",
+      "keywords" : [
+          "Eastern"
+      ]
+    },
+    {
+      "name": "Programming",
+      "keywords" : [
+          "Side-projects",
+          "Coding problems"
+      ]
+    },
+    {
+      "name": "Sports",
+      "keywords" : [
+          "Basketball",
+          "Soccer"
+      ]
+    }
+  ],
+  "references": [],
+  "awards" : [
+    {
+      "title" : "Dean’s Honour List Math/Engineering for 1A and 1B Term",
+      "summary": "",
+      "awarder": "University of Waterloo, 2011 - 2012",
+      "date" : "2012"
+    }
+  ],
+  "meta": { "theme": "elegant" }
+}
+
